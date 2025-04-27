@@ -1,0 +1,21 @@
+#spring:
+#  application:
+#    name: login
+#
+#logging:
+#  level:
+#    s7:
+#      Application: warn
+#    org:
+#      springframework:
+#        web: error
+#    com:
+#      example:
+#        login: debug
+#
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+#    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+#
+#  file:
+#    name: "C:/Users/amanp/spring-boot-logging/logFile/apiyml.log"
