@@ -1,4 +1,9 @@
 package com.example.Springboot_Securit_MYSQL.repository;
 
-public class UserRepository {
+
+import com.example.Springboot_Securit_MYSQL.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User,Integer> {
+    User findByUsername(String username);
 }

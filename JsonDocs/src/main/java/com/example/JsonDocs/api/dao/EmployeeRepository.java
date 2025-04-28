@@ -1,4 +1,7 @@
 package com.example.JsonDocs.api.dao;
 
-public interface EmployeeRepository {
+import com.example.JsonDocs.api.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 }
