@@ -1,4 +1,4 @@
-package com.example.Jdbcactive.api.service;
+package com.example.Jdbcactive.api.model;
 
 
 import lombok.AllArgsConstructor;
