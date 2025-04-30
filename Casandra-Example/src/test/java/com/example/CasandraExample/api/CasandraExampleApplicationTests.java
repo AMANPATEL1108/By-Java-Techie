@@ -6,6 +6,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class CasandraExampleApplicationTests {
 
+
+
+
+
+	
 	@Test
 	void contextLoads() {
 	}
