@@ -1,0 +1,44 @@
+# Base domain entry
+dn: dc=springframework,dc=org
+objectClass: top
+objectClass: domain
+dc: springframework
+
+# Organizational Unit for 'people'
+dn: ou=people,dc=springframework,dc=org
+objectClass: organizationalUnit
+ou: people
+
+# User: alice
+dn: uid=alice,ou=people,dc=springframework,dc=org
+objectClass: inetOrgPerson
+uid: alice
+cn: Alice Example
+sn: Example
+userPassword: alicepassword
+
+# User: bob
+dn: uid=bob,ou=people,dc=springframework,dc=org
+objectClass: inetOrgPerson
+uid: bob
+cn: Bob Example
+sn: Example
+userPassword: bobpassword
+
+# Organizational Unit for 'groups' (Remove posixGroup for now)
+dn: ou=groups,dc=springframework,dc=org
+objectClass: organizationalUnit
+ou: groups
+
+# Group: users (Without posixGroup)
+dn: cn=users,ou=groups,dc=springframework,dc=org
+objectClass: groupOfNames
+cn: users
+member: uid=alice,ou=people,dc=springframework,dc=org
+member: uid=bob,ou=people,dc=springframework,dc=org
+
+# Group: admins (Without posixGroup)
+dn: cn=admins,ou=groups,dc=springframework,dc=org
+objectClass: groupOfNames
+cn: admins
+member: uid=alice,ou=people,dc=springframework,dc=org
