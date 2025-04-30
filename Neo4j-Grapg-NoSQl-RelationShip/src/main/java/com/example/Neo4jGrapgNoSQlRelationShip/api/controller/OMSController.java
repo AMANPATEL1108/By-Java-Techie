@@ -1,25 +1,24 @@
-package com.javatechie.spring.neo4j.api.controller;
+package com.example.Neo4jGrapgNoSQlRelationShip.api.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
 
+import com.example.Neo4jGrapgNoSQlRelationShip.api.node.Customer;
+import com.example.Neo4jGrapgNoSQlRelationShip.api.node.Product;
+import com.example.Neo4jGrapgNoSQlRelationShip.api.repository.CustomerRepository;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.javatechie.spring.neo4j.api.node.Customer;
-import com.javatechie.spring.neo4j.api.node.Product;
-import com.javatechie.spring.neo4j.api.repository.CustomerRepository;
 
 @RestController
 public class OMSController {
 	@Autowired
 	private CustomerRepository repository;
 
-	@PostConstruct
+	@jakarta.annotation.PostConstruct
 	public void purchaseOrder() {
 		List<Product> products = new ArrayList<>();
 		products.add(new Product(999, "bike", 1, 180000));

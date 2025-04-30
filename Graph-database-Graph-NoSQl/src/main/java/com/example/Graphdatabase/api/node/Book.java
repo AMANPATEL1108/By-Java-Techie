@@ -1,4 +1,4 @@
-package com.javatechie.spring.neo4j.api.node;
+package com.example.Graphdatabase.api.node;
 
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Book {
 
-	@Id
-	private String id;
-	private String name;
-	private String author;
+    @Id
+    private String id;
+    private String name;
+    private String author;
 }
