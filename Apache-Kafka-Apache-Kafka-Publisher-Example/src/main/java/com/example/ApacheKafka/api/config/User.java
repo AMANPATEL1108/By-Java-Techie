@@ -1,4 +1,4 @@
-package com.example.ApacheKafkaConsumer.api.config;
+package com.example.ApacheKafka.api.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
