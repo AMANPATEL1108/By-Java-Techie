@@ -1,0 +1,9 @@
+ClientSideLoadBalancingUsingCloudRibbonApplication:
+  ribbion:
+    eureka:
+      enabled:false
+    ListOfServers:localhost:8081,localhost:8082,localhost:8083
+    ServerListRefereshIntervals:2000
+
+server:
+  port: 9090
